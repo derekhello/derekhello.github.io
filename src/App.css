@@ -1,10 +1,14 @@
 
 .--filter-drop-shadow-black-invert-ten-percent{
-  filter: drop-shadow(16px 16px 20px #000000) invert(10%);
+  filter: drop-shadow(16px 16px 20px #8eb9ff) invert(10%);
 }
 
 .--text-shadow-black{
-  text-shadow: 1px 1px 40px #000000;
+  text-shadow: 1px 1px 40px #8eb9ff;
+}
+
+.--text-shadow-black-one{
+  text-shadow: 1px 1px 30px #8eb9ff;
 }
 
 .scroll-container {

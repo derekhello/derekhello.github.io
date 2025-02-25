@@ -24,13 +24,13 @@ import Thespokesperson from "../assets/img/volunteer/Thespokesperson.jpg";
 export const programmings = [
   {
     type: "programmings",
-    title: "Hello Worlder",
+    title: "All in One",
     technologies: ["Javascript"],
-    description: `That’s not just an introduction; it’s the name of the webpage I created using JavaScript. Here, you’ll see my welcome page. 
+    description: `Hello World! It’s the name of the webpage I created using JavaScript. This website has three channels: Coding Project, Volunteer Program, and Studying log, which record my learning and life in the past two years.
 
-This website has three channels: Coding Project, Volunteer Program, and Studying log, which record my learning and life in the past two years.
+Designing websites with programming languages has opened my cyberspace, allowing me to keep records, share ideas, and continue thinking."
 
-Designing websites with programming languages has opened my cyberspace, allowing me to keep records, share ideas, and continue thinking.`,
+You can browse my website through this link https://derekhello.github.io/ `,
     firstImg: HelloWorlder,
     video: '',
     text: "",
@@ -40,39 +40,38 @@ Designing websites with programming languages has opened my cyberspace, allowing
     type: "programmings",
     title: "Sketch Assistant",
     technologies: ["Python"],
-    description: `The name of this work is "Sketch Assistant."
+    description: `The name of this work is "Sketch Assistant." Through AI programming, I developed a function that processes and turns complex paintings into simple sketch portraits, aiding beginners and self-taught art students in understanding the fundamentals of line work. 
 
-Through AI programming, I developed a function that processes and turns complex paintings into simple sketch portraits, aiding beginners and self-taught art students in understanding the fundamentals of line work. 
-`,
+If you also want to try this application, you can download the source code of the program below and open it in Python software. Follow the video to use it.`,
     firstImg: SketchAssistant,
     video: 'https://github.com/dereckhello/dereckhello.github.io/releases/download/1.0.0/SketchAsistants.mp4',
     text: "",
-    code: 'SketchAssistant.py'
+    code: 'sketch_assistant.zip'
   },
   {
     type: "programmings",
     title: "Expression Detection Master",
     technologies: ["Python"],
-    description: `The name of this work is "Expression Detection Master."
-
-Utilizing AI, I’ve developed a program that intelligently recognizes and prompts expressions. 
+    description: `The name of this work is "Expression Detection Master." Utilizing AI, I’ve developed a program that intelligently recognizes and prompts expressions. 
 
 This work has a wide range of applications, such as helping teachers quickly identify students who are depressed and distracted in the classroom and improving communication efficiency.
-`,
+
+If you also want to try this application, you can download the source code of the program below and open it in Python software. Follow the video to use it. `,
     firstImg: ExpressionDetectionMaster,
     video: 'https://github.com/dereckhello/dereckhello.github.io/releases/download/1.0.0/ExpressionDetectionMaster.mp4',
     text: "",
-    code: 'Expression-Detection-Master.zip'
+    code: 'expression_detection_master.zip'
   },
   {
     type: "programmings",
     title: "Flappy Bird",
     technologies: ["pygame"],
-    description: `
+    description: `The name of this work is "Flappy Bird"，a game I made with Pygame.
 Don’t underestimate how challenging this game is! It’s a true test of hand-eye coordination. 
 
 My original inspiration for this game came from not being able to visit my grandfather. I created the game to exercise his reaction ability in a fun way.
-`,
+
+If you also want to try this application, you can download the source code of the program below and open it in Python software. Follow the video to play it. `,
     firstImg: FlappyBird,
     video: 'https://github.com/dereckhello/dereckhello.github.io/releases/download/1.0.0/FlappyBirdGame.mp4',
     text: "",
@@ -82,43 +81,45 @@ My original inspiration for this game came from not being able to visit my grand
     type: "programmings",
     title: "Magical Wallpaper Crawler",
     technologies: ["python"],
-    description: `
-This program can be used to create seasonal images for anything from school projects to event posters. The program is connected to the Bing search website and can retrieve image information by date. For example, it’s the traditional Chinese Spring Festival now, so the images that “crawled” here correspond to this time of year. 
+    description: `The name of this work is a magical wallpaper crawler. This program can be used to create seasonal images for anything from school projects to event posters. The program is connected to the Bing search website and can retrieve image information by date. For example, it’s the traditional Chinese Spring Festival now, so the images that “crawled” here correspond to this time of year. 
 
-I shared this website with my classmates and roommates, and now it has become a tool for managing our photo materials.`,
+I shared this website with my classmates and now it has become a tool for managing our photo materials."
+
+If you also want to try this application, you can download the source code of the program below and open it in Python software. Follow the video to use it. `,
     firstImg: AMagicalWallpaperCrawler,
     video: 'https://github.com/dereckhello/dereckhello.github.io/releases/download/1.0.0/MagicWallpaperCrawler.mp4',
     text: "",
-    code: "MagicalWallpaperCrawler.py"
+    code: "magic_wallpaper_crawler.zip"
   },
   {
     type: "programmings",
     title: "Alien Invasion",
     technologies: ["pygame"],
-    description: `
+    description: `The name of this work is Alien Invasion.
 This project was inspired by the airplane shooting games I loved as a kid. In this game, players control the mouse via their mobile phone to fire bullets on the screen, aiming to eliminate the invading forces. The most exciting part is that the invaders gradually advance toward the spaceship at the bottom, requiring quick reflexes and precise shooting within a limited time.
 After developing this game, I realized it's great for improving finger dexterity and enhancing brain responsiveness. It’s also well-suited for elderly players, as it may help in preventing cognitive decline.
-
-Now, let’s check out a demonstration of this fun game!`,
+If you also want to try this application, you can download the source code of the program below and open it in Python software. Follow the video to play it. `,
     firstImg: AlienInvasion,
     video: 'https://github.com/dereckhello/dereckhello.github.io/releases/download/1.0.0/AlienInvasion.mp4',
     text: "",
-    code: "Alien-Invasion-Pygame-1.0.0.zip"
+    code: "alien_invasion_pygame.zip"
   },
   {
     type: "programmings",
     title: "Fun Math Game",
-    technologies: ["python"],
+    technologies: ["SolidJS + TailwindCSS + Tauri"],
     description: `
+This is a fun math game I designed.
+
 This game was inspired by my volunteer work in family education. Developing puzzle-type math games suitable for family interaction benefits Children’s cognitive growth. 
 
 The system automatically generates four numbers. The task is to use any combination of addition, subtraction, multiplication, or division to get a sum of 24. 
 
-Let's watch the demonstration of the fun game.`,
+If you also want to try this application, you can download the source code of the program below and open it in Python software. Follow the video to play it. `,
     firstImg: AFunMathGame,
     video: 'https://github.com/dereckhello/dereckhello.github.io/releases/download/1.0.0/TwentyFourPuzzleApp.mp4',
     text: "",
-    code: 'Twenty-Four-Puzzle-in-Python-1.0.0'
+    code: 'twenty_four_puzzle_in_python.zip'
   },
 ];
 

@@ -1,27 +1,50 @@
 import { Outlet } from 'react-router-dom';
-
 import { useState } from 'react';
+import { useLocation,useNavigate } from'react-router-dom';
 
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const location = useLocation();
+  const navigate = useNavigate();
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const goToTarget = (targetId) => {
+    const goToId = () => {
+      const target = document.getElementById(targetId);
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 100,
+          behavior:'smooth',
+        });
+      }
+    }
+    if (location.pathname !== '/') {
+      navigate(`/`);
+      setTimeout(() => {
+        goToId();
+      },250)
+    } else {
+      goToId();
+    }
+    
+  }
+
+
   return (
-    <div className="border-b-2 border-[#E6E6E9] flex justify-between min-h-[40px] py-[20px] px-[10px] relative">
+    <div className="sticky top-0 left-0 w-full border-b-2 border-[#E6E6E9] flex justify-between min-h-[40px] py-[20px] z-50 bg-white">
       <div className="flex items-center">
         <a
-          className="py-[5px] px-[10px] border-b-2 border-[#9999A1] outline-4 outline-[#9999A1] --filter-drop-shadow-black-invert-ten-percent"
-          href="#"
+          className="py-[5px] px-[10px] cursor-pointer"
+          onClick={() => {goToTarget('Home')}}
         >
-          <h2>HelloWorld-er</h2>
+          <h2 className='text-3xl font-bold'>All in One</h2>
         </a>
-        <div className="ml-10 space-x-6 hidden md:flex">
-          <a className="text-[#333] hover:text-[#0073e6]" href="#">Home</a>
-          <a className="text-[#333] hover:text-[#0073e6]" href="#CodingProject">Coding Project</a>
-          <a className="text-[#333] hover:text-[#0073e6]" href="#VolunteerProgram">Volunteer Program</a>
-          <a className="text-[#333] hover:text-[#0073e6]" href="#StudyingLog">Studying Log</a>
+        <div className="ml-20 space-x-6 hidden md:flex">
+          <a className="text-[#333] hover:text-[#0073e6] text-lg font-bold cursor-pointer" onClick={() => {goToTarget('Home')}}>Home</a>
+          <a className="text-[#333] hover:text-[#0073e6] text-lg font-bold cursor-pointer" onClick={() => {goToTarget("CodingProject")}}>Coding Project</a>
+          <a className="text-[#333] hover:text-[#0073e6] text-lg font-bold cursor-pointer" onClick={() => {goToTarget("VolunteerProgram")}}>Volunteer Program</a>
+          <a className="text-[#333] hover:text-[#0073e6] text-lg font-bold cursor-pointer" onClick={() => {goToTarget("StudyingLog")}}>Studying Log</a>
         </div>
         {/* Mobile menu button */}
         <button
@@ -54,10 +77,10 @@ const Header = () => {
       <div
         className={`absolute top-0 left-0 w-full bg-white shadow-lg p-4 md:hidden transform transition-all duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0 opacity-100 visible' : '-translate-x-full opacity-0 invisible'}`}
       >
-        <a className="block text-[#333] hover:text-[#0073e6]" href="#">Home</a>
-        <a className="block text-[#333] hover:text-[#0073e6]" href="#">Coding Project</a>
-        <a className="block text-[#333] hover:text-[#0073e6]" href="#">Volunteer Program</a>
-        <a className="block text-[#333] hover:text-[#0073e6]" href="#">Studying Log</a>
+        <a className="block text-[#333] hover:text-[#0073e6] text-lg font-bold" onClick={() => {goToTarget('Home')}}>Home</a>
+        <a className="block text-[#333] hover:text-[#0073e6] text-lg font-bold" onClick={() => {goToTarget("CodingProject")}}>Coding Project</a>
+        <a className="block text-[#333] hover:text-[#0073e6] text-lg font-bold" onClick={() => {goToTarget("VolunteerProgram")}}>Volunteer Program</a>
+        <a className="block text-[#333] hover:text-[#0073e6] text-lg font-bold" onClick={() => {goToTarget("StudyingLog")}}>Studying Log</a>
         {/* Close button for mobile menu */}
         <button
           className="absolute top-4 right-4 text-[#333] hover:text-[#0073e6]"
@@ -79,15 +102,32 @@ const Header = () => {
   );
 };
 
+// Footer.js
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-700 text-white py-4 rounded">
+      <div className="container mx-auto text-center">
+        <p className="text-sm">
+          &copy; {new Date().getFullYear()} All In One. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+};
+
 
 
 const Layout = () => {
-  return <div className="max-w-7xl mx-auto px-2 py-4">
-    <Header />
-    <main className="flex-grow">
-      <Outlet />
-    </main>
-  </div>
+  return (
+    <div className="max-w-7xl mx-auto px-2 py-4">
+      <Header />
+      <main className="flex-grow">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default Layout
+export default Layout;
