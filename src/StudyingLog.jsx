@@ -50,7 +50,7 @@ const StudyingLog = () => {
         <div className="col-span-3">
            
             <div className="p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl flex-1">
-            <div className="m-6 flex items-center justify-center gap-3">
+            <div className="mb-6 flex items-center justify-center gap-3">
               <h1 className="text-3xl font-bold text-gray-800 dark:text-white">
                 {currentLog.title}
               </h1>

@@ -42,7 +42,7 @@ const Programming = () => {
       <div className="mt-4 flex-1 grid grid-cols-4 gap-4">
         <div className="col-span-3">
           <div className="p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl py-4">
-            <div className="flex align-middle items-center">
+            <div className="mb-6 flex align-middle items-center justify-center">
               <h1 className="text-3xl font-bold">{currentItem.title}</h1>
               <div className="ml-4 z-10">
                 {currentItem.technologies.map((tech) => {
