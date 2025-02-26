@@ -48,14 +48,12 @@ function App() {
             <img
               src={MeA}
               className="w-full h-full object-cover rounded"
-              loading="lazy"
             />
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center w-[1200px] h-[620px]">
             <img
               src={MeB}
               className="w-full h-full object-cover rounded"
-              loading="lazy"
             />
           </SwiperSlide>
         </Swiper>
