@@ -44,7 +44,7 @@ const AutoScrolling = ({ speed = 1,content }) => {
 
 AutoScrolling.propTypes = {
   speed: PropTypes.number,
-  content: PropTypes.dom
+  content: PropTypes.any
 };
 
 export default AutoScrolling;

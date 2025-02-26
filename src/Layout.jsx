@@ -27,6 +27,9 @@ const Header = () => {
     } else {
       goToId();
     }
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
     
   }
 
