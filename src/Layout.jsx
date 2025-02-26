@@ -38,7 +38,7 @@ const Header = () => {
           className="py-[5px] px-[10px] cursor-pointer"
           onClick={() => {goToTarget('Home')}}
         >
-          <h2 className='text-3xl font-bold'>All in One</h2>
+          <h2 className='text-3xl font-bold'>HelloWorld-er</h2>
         </a>
         <div className="ml-20 space-x-6 hidden md:flex">
           <a className="text-[#333] hover:text-[#0073e6] text-lg font-bold cursor-pointer" onClick={() => {goToTarget('Home')}}>Home</a>
@@ -109,7 +109,7 @@ const Footer = () => {
     <footer className="bg-gray-700 text-white py-4 rounded">
       <div className="container mx-auto text-center">
         <p className="text-sm">
-          &copy; {new Date().getFullYear()} All In One. All rights reserved.
+          &copy; {new Date().getFullYear()} HelloWorld-er. All rights reserved.
         </p>
       </div>
     </footer>

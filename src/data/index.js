@@ -4,7 +4,7 @@ import ExpressionDetectionMaster from "../assets/img/ExpressionDetectionMaster.j
 import FlappyBird from "../assets/img/FlappyBird.jpg";
 import AMagicalWallpaperCrawler from "../assets/img/AMagicalWallpaperCrawler.jpg";
 import AlienInvasion from "../assets/img/AlienInvasion.jpg";
-import AFunMathGame from "../assets/img/AFunMathGame.jpg";
+import AFunMathGame from "../assets/img/AFunMathGame.png";
 import BookReviewofBuffaloSolider from "../assets/img/studylog/BookReviewofBuffaloSolider.jpg";
 import Rememberingpolyatomicionformulas from "../assets/img/studylog/Rememberingpolyatomicionformulas.jpg";
 import TheseriousconsequenceoftheVersaillesSettlementforGermany from "../assets/img/studylog/TheseriousconsequenceoftheVersaillesSettlementforGermany.jpg";

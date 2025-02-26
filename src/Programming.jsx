@@ -1,4 +1,4 @@
-import { useNavigate,useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { programmings } from "./data/index";
 import codebanner from "./assets/img/codebanner.jpg";
 import ScrollToTop from "./components/ScrollToTop.jsx";
@@ -26,25 +26,21 @@ const Programming = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
       <ScrollToTop />
-      <h2 className="text-4xl font-bold mb-6 py-[20px] px-[10px] flex items-center">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-6 py-[20px] px-[10px] flex items-center">
         <span className="w-1 h-8 bg-gradient-to-t from-blue-600 to-blue-400 mr-4"></span>
         <span className="--text-shadow-black-one">Coding Project</span>
       </h2>
-      <div className="relative h-[320px] w-full">
-        <div className="h-full w-full overflow-hidden rounded-xl shadow-md">
-          <img
-            src={codebanner}
-            className="w-full h-full object-cover"
-            alt={currentItem.title}
-          />
+      <div className="relative w-full aspect-w-16 aspect-h-9">
+        <div className="w-full h-full overflow-hidden rounded-xl shadow-md">
+          <img src={codebanner} className="w-full h-full object-cover" />
         </div>
       </div>
-      <div className="mt-4 flex-1 grid grid-cols-4 gap-4">
-        <div className="col-span-3">
+      <div className="mt-4 grid grid-cols-1 sm:grid-cols-4 gap-4">
+        <div className="sm:col-span-3">
           <div className="p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl py-4">
             <div className="mb-6 flex align-middle items-center justify-center">
-              <h1 className="text-3xl font-bold">{currentItem.title}</h1>
-              <div className="ml-4 z-10">
+              <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-bold">{currentItem.title}</h1>
+              <div className="ml-4 z-10 flex flex-wrap gap-2">
                 {currentItem.technologies.map((tech) => {
                   return (
                     <span
@@ -66,8 +62,7 @@ const Programming = () => {
                 controls
                 loop
                 preload="auto"
-                width="100%" // 设置宽度为 100%，也可以根据需要自定义
-                height="auto" // 保持视频的纵横比
+                className="w-full h-auto"
               ></video>
             </div>
             {currentItem.code && (
@@ -102,13 +97,17 @@ const Programming = () => {
             )}
           </div>
         </div>
-        <div className="col-span-1 p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl py-4 overflow-auto">
-          <h2 className="text-2xl font-bold mb-4">
-            Other Projects
-          </h2>
+        <div className="sm:col-span-1 p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl py-4 overflow-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-bold mb-4">Other Projects</h2>
           {otherItems.map((item) => {
             return (
-              <div key={item.title} className="mt-5 p-2 rounded border-blue-100 border-2 cursor-pointer" onClick={() => {goToPage("programmings", item.title)}}>
+              <div
+                key={item.title}
+                className="mt-5 p-2 rounded border-blue-100 border-2 cursor-pointer"
+                onClick={() => {
+                  goToPage("programmings", item.title);
+                }}
+              >
                 <div className="text-l">{item.title}</div>
                 <div>
                   <img

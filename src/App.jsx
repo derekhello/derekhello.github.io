@@ -15,14 +15,14 @@ function App() {
       <div className="flex w-full pt-[10px]" id="Home">
         <div className="px-[10px] w-full">
           <div className="flex items-center">
-            <h1 className="text-6xl font-bold">
-              Hi! 
+            <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-6xl font-bold">Hi!</h1>
+            <h1 className="ml-8 text-4xl sm:text-3xl md:text-4xl lg:text-6xl font-bold">
+              I am <span className="--text-shadow-black">Derek</span> !
             </h1>
-            <h1 className="ml-8 text-6xl font-bold">I am  <span className="--text-shadow-black">Derek</span> !</h1>
           </div>
           <section className="py-[10px] mt-[10px]">
             <div>
-              <h2 className="text-4xl font-bold mb-6 py-[20px] flex items-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-6 py-[20px] px-[10px] flex items-center">
                 <span className="w-1 h-8 bg-gradient-to-t from-blue-600 to-blue-400 mr-4"></span>
                 <span className="--text-shadow-black-one">About Me</span>
               </h2>
@@ -42,7 +42,7 @@ function App() {
           autoplay={{ delay: 3000, disableOnInteraction: false }} // 自动播放，3秒间隔
           pagination={{ clickable: true }} // 指示器可点击
           modules={[Autoplay, Pagination]} // 引入模块
-          className="w-[1200px] h-[620px]" // Swiper 固定大小
+          className="w-full h-auto max-w-[1200px] max-h-[620px]" 
         >
           <SwiperSlide className="flex justify-center items-center w-[1200px] h-[620px]">
             <img
@@ -64,11 +64,10 @@ function App() {
       <section className="py-[10px] px-[10px] mt-[10px]">
         <h2
           id="CodingProject"
-          className="text-4xl font-bold mb-6 py-[20px] px-[10px] flex items-center"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-6 py-[20px] px-[10px] flex items-center"
         >
           <span className="w-1 h-8 bg-gradient-to-t from-blue-600 to-blue-400 mr-4"></span>
           <span className="--text-shadow-black-one">Coding Project</span>
-          
         </h2>
         <AutoScrolling
           content={programmings.concat(programmings).map((project, index) => (
@@ -82,11 +81,12 @@ function App() {
       <section className="py-[10px] px-[10px] mt-[10px]">
         <h2
           id="VolunteerProgram"
-          className="text-4xl font-bold mb-6 py-[20px] px-[10px] flex items-center"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-6 py-[20px] px-[10px] flex items-center"
         >
           <span className="w-1 h-8 bg-gradient-to-t from-blue-600 to-blue-400 mr-4"></span>
           <span className="--text-shadow-black-one">Volunteer Program</span>
         </h2>
+
         <AutoScrolling
           content={volunteers
             .concat(volunteers)
@@ -103,11 +103,10 @@ function App() {
       <section className="py-[10px] px-[10px] mt-[10px]">
         <h2
           id="StudyingLog"
-          className="text-4xl font-bold mb-6 py-[20px] px-[10px] flex items-center"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-6 py-[20px] px-[10px] flex items-center"
         >
           <span className="w-1 h-8 bg-gradient-to-t from-blue-600 to-blue-400 mr-4"></span>
           <span className="--text-shadow-black-one">Studying Log</span>
-         
         </h2>
         <AutoScrolling
           content={studyingLogs
