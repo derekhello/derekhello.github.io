@@ -32,9 +32,9 @@ Designing websites with programming languages has opened my cyberspace, allowing
 
 You can browse my website through this link https://derekhello.github.io/ `,
     firstImg: HelloWorlder,
-    video: '',
+    video: 'https://github.com/derekhello/derekhello.github.io/releases/download/v1/AllinOne.mp4',
     text: "",
-    code: "",
+    code: "all_in_one.zip",
   },
   {
     type: "programmings",
