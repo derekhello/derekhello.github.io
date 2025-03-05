@@ -28,8 +28,13 @@ function App() {
               </h2>
 
               <div className="text-xl border-2 border-[#E6E6E9] rounded p-4">
-                I am a self-taught programmer. I am a student in Hong Kong
-                currently. The website is totally built by myself.
+              Hi, I’m Derek, a student from Hong Kong. I’m a self-taught programmer, an active learner, and a community contributor. Computer science and programming are my biggest passions. Over the past three years, I’ve dedicated countless hours to learning and improving my skills, developing one project after another—each inspired by my observations of school and daily life, whether it’s a sketch assistant or a fun game.
+              <br/><br/>
+I built this website to bring all my projects together, creating a space where I can share my experiences and passion for coding with you. For me, it’s a personal journey of growth. For others, I hope it can be a helpful resource. Some of my projects are designed to support specific groups, like the elderly. Games like Flappy Bird and Alien Invasion can help improve reaction speed, while the Twenty-Four Puzzle strengthens basic math skills and number sensitivity. I also developed the Magical Wallpaper Crawler to enhance online search efficiency.
+<br/><br/>
+Beyond coding, I’ve shared my study log, which I hope will inspire other students to explore subjects like history more deeply. My writings can serve as examples for analyzing comics or historical statements. Additionally, my voluntary work is something I hope will encourage more people to get involved in their communities and support those in need.
+<br/><br/>
+I invite you to explore this site, check out my projects, and join me on this journey of learning and discovery!
               </div>
             </div>
           </section>
